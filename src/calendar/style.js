@@ -7,8 +7,8 @@ export default function getStyle(theme={}) {
   const appStyle = {...defaultStyle, ...theme};
   return StyleSheet.create({
     container: {
-      paddingLeft: 5,
-      paddingRight: 5,
+      paddingLeft: 10,
+      paddingRight: 10,
       backgroundColor: appStyle.calendarBackground
     },
     monthView: {
@@ -18,9 +18,8 @@ export default function getStyle(theme={}) {
       marginTop: 7,
       marginBottom: 7,
       flexDirection: 'row',
-      justifyContent: 'space-around'
+      justifyContent: 'space-between',
     },
     ...(theme[STYLESHEET_ID] || {})
   });
 }
-

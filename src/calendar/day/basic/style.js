@@ -17,6 +17,8 @@ export default function styleConstructor(theme={}) {
       fontFamily: appStyle.textDayFontFamily,
       fontWeight: appStyle.textDayFontWeight,
       color: appStyle.dayTextColor,
+      width: 35,
+      textAlign: 'center',
       backgroundColor: 'rgba(255, 255, 255, 0)',
       ...appStyle.textDayStyle
     },
@@ -61,6 +63,7 @@ export default function styleConstructor(theme={}) {
     weekNumberContainer: {
       alignItems: 'center',
       justifyContent: 'center',
+      marginRight: 8,
     },
     disabledDot: {
       backgroundColor: appStyle.disabledDotColor || appStyle.dotColor

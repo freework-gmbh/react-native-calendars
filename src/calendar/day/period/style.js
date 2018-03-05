@@ -36,6 +36,8 @@ export default function styleConstructor(theme={}) {
     },
     text: {
       marginTop: 7,
+      width: 35,
+      textAlign: 'center',
       fontSize: appStyle.textDayFontSize,
       fontFamily: appStyle.textDayFontFamily,
       fontWeight: appStyle.textDayFontWeight,
@@ -46,7 +48,6 @@ export default function styleConstructor(theme={}) {
       backgroundColor: appStyle.todayBackgroundColor
     },
     todayText: {
-      fontWeight: '500',
       color: theme.todayTextColor || appStyle.dayTextColor,
       //color: appStyle.textLinkColor
     },
