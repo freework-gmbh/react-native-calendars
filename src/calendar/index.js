@@ -82,9 +82,9 @@ class Calendar extends Component {
 
   constructor(props) {
     super(props);
-    
+
     this.style = styleConstructor(this.props.theme);
-    
+
     this.state = {
       currentMonth: props.current ? parseDate(props.current) : XDate()
     };
@@ -223,7 +223,7 @@ class Calendar extends Component {
   }
 
   renderWeekNumber (weekNumber) {
-    return <Day key={`week-${weekNumber}`} theme={this.props.theme} marking={{disableTouchEvent: true}} state='disabled'>{weekNumber}</Day>;
+    return <Day key={`week-${weekNumber}`} theme={this.props.theme} marking={{disableTouchEvent: true}} state='disabled' isWeekNumber>{weekNumber}</Day>;
   }
 
   renderWeek(days, id) {
@@ -245,7 +245,7 @@ class Calendar extends Component {
     while (days.length) {
       weeks.push(this.renderWeek(days.splice(0, 7), weeks.length));
     }
-    
+
     let indicator;
     const current = parseDate(this.props.current);
     if (current) {

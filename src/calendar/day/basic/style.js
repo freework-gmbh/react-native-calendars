@@ -55,6 +55,13 @@ export default function styleConstructor(theme={}) {
     selectedDot: {
       backgroundColor: appStyle.selectedDotColor
     },
+    weekNumber: {
+      fontSize: 11,
+    },
+    weekNumberContainer: {
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     disabledDot: {
       backgroundColor: appStyle.disabledDotColor || appStyle.dotColor
     },
