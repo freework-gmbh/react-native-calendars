@@ -1,6 +1,6 @@
 {
   "name": "@freework/react-native-calendars",
-  "version": "1.17.7",
+  "version": "1.17.8",
   "main": "src/index.js",
   "description": "React Native Calendar Components",
   "scripts": {
