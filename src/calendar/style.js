@@ -12,9 +12,15 @@ export default function getStyle(theme={}) {
       marginBottom: 7,
       backgroundColor: appStyle.calendarBackground
     },
+    monthView: {
+      backgroundColor: appStyle.calendarBackground
+    },
     week: {
       flexDirection: 'row',
       justifyContent: 'space-between',
+    },
+    dayContainer: {
+      width: 32
     },
     ...(theme[STYLESHEET_ID] || {})
   });
