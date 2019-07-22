@@ -1,26 +1,19 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import * as defaultStyle from '../style';
 import platformStyles from './platform-style';
 
 const STYLESHEET_ID = 'stylesheet.agenda.main';
 
 export default function styleConstructor(theme = {}) {
-  const appStyle = {...defaultStyle, ...theme};
+  const appStyle = { ...defaultStyle, ...theme };
   const { knob, weekdays } = platformStyles(appStyle);
   return StyleSheet.create({
     knob,
     weekdays,
-    header: {
-      overflow: 'hidden',
-      justifyContent: 'flex-end',
-      position:'absolute',
-      height:'100%',
-      width:'100%',
-    },
     calendar: {
       flex: 1,
       borderBottomWidth: 1,
-      borderColor: appStyle.separatorColor
+      borderColor: appStyle.separatorColor,
     },
     knobContainer: {
       flex: 1,
@@ -30,7 +23,7 @@ export default function styleConstructor(theme = {}) {
       height: 24,
       bottom: 0,
       alignItems: 'center',
-      backgroundColor: appStyle.calendarBackground
+      backgroundColor: appStyle.calendarBackground,
     },
     weekday: {
       width: 32,
@@ -40,9 +33,15 @@ export default function styleConstructor(theme = {}) {
     },
     reservations: {
       flex: 1,
-      marginTop: 104,
-      backgroundColor: appStyle.backgroundColor
+      backgroundColor: appStyle.backgroundColor,
     },
-    ...(theme[STYLESHEET_ID] || {})
+    header: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: 56,
+      borderBottomColor: '#ACACAC',
+      borderBottomWidth: 1,
+    },
+    ...(theme[STYLESHEET_ID] || {}),
   });
 }
