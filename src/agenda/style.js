@@ -15,16 +15,6 @@ export default function styleConstructor(theme = {}) {
       borderBottomWidth: 1,
       borderColor: appStyle.separatorColor,
     },
-    knobContainer: {
-      flex: 1,
-      position: 'absolute',
-      left: 0,
-      right: 0,
-      height: 24,
-      bottom: 0,
-      alignItems: 'center',
-      backgroundColor: appStyle.calendarBackground,
-    },
     weekday: {
       width: 32,
       textAlign: 'center',

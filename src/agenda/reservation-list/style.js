@@ -1,35 +1,34 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import * as defaultStyle from '../../style';
 
 const STYLESHEET_ID = 'stylesheet.agenda.list';
 
 export default function styleConstructor(theme = {}) {
-  const appStyle = {...defaultStyle, ...theme};
-  return  StyleSheet.create({
+  const appStyle = { ...defaultStyle, ...theme };
+  return StyleSheet.create({
     container: {
-      flexDirection: 'row'
+      flexDirection: 'row',
     },
     dayNum: {
-      fontSize: 28,
-      fontWeight: '200',
-      color: appStyle.agendaDayNumColor
+      fontSize: 20,
+      color: appStyle.textColor,
+      fontFamily: 'Lato-Regular',
     },
     dayText: {
-      fontSize: 14,
-      fontWeight: '300',
-      color: appStyle.agendaDayTextColor,
-      marginTop: -5,
-      backgroundColor: 'rgba(0,0,0,0)'
+      fontSize: 15,
+      color: appStyle.textColor,
+      backgroundColor: 'rgba(0,0,0,0)',
+      fontFamily: 'Lato-Regular',
     },
     day: {
       width: 63,
       alignItems: 'center',
       justifyContent: 'flex-start',
-      marginTop: 32
+      marginTop: 24,
     },
     today: {
-      color: appStyle.agendaTodayColor
+      color:appStyle.selectedDayBackgroundColor,
     },
-    ...(theme[STYLESHEET_ID] || {})
+    ...(theme[STYLESHEET_ID] || {}),
   });
 }

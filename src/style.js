@@ -2,26 +2,26 @@ import {Platform} from 'react-native';
 
 export const foregroundColor = '#ffffff';
 export const backgroundColor = '#f4f4f4';
-export const separatorColor = '#e8e9ec';
+export const separatorColor = '#999999';
 
 export const processedColor = '#a7e0a3';
 export const processingColor = '#ffce5c';
 export const failedColor = 'rgba(246, 126, 126,1)';
 
-export const textDefaultColor = '#2d4150';
-export const textColor = '#43515c';
-export const textLinkColor = '#00adf5';
-export const textSecondaryColor = '#7a92a5';
+export const textDefaultColor = '#424242';
+export const textColor = '#424242';
+export const textLinkColor = '#4ECDC4';
+export const textSecondaryColor = '#999999';
 
-export const textDayFontFamily = 'System';
-export const textMonthFontFamily = 'System';
-export const textDayHeaderFontFamily = 'System';
+export const textDayFontFamily = 'Lato-Regular';
+export const textMonthFontFamily = 'Lato-Regular';
+export const textDayHeaderFontFamily = 'Lato-Bold';
 
 export const textMonthFontWeight = '300';
 
-export const textDayFontSize = 16;
-export const textMonthFontSize = 16;
-export const textDayHeaderFontSize = 13;
+export const textDayFontSize = 15;
+export const textMonthFontSize = 15;
+export const textDayHeaderFontSize = 15;
 
 export const calendarBackground = foregroundColor;
 export const textSectionTitleColor = '#b6c1cd';
