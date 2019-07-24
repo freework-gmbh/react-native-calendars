@@ -12,7 +12,7 @@ import styleConstructor from './style';
 
 class Day extends Component {
   static displayName = 'IGNORE';
-  
+
   static propTypes = {
     // TODO: selected + disabled props should be removed
     state: PropTypes.oneOf(['selected', 'disabled', 'today', '']),
@@ -176,7 +176,8 @@ class Day extends Component {
           backgroundColor: this.theme.calendarBackground
         };
         containerStyle.push({
-          backgroundColor: flags.endingDay.color
+          backgroundColor: flags.endingDay.color,
+          borderRadius: 8,
         });
       }
 
