@@ -141,6 +141,8 @@ class CalendarList extends Component {
 
   componentDidMount() {
     requestAnimationFrame(() => {
+      if(!this.listView) return;
+
       this.listView.scrollToIndex({animated: false, index: this.getMonthIndex(this.state.openDate)});
     });
   }
